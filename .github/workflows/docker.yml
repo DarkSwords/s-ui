@@ -19,8 +19,8 @@ jobs:
       uses: docker/metadata-action@v5
       with:
         images: |
-          alireza7/s-ui
-          ghcr.io/alireza0/s-ui
+          ${{ secrets.DOCKER_HUB_USERNAME }}/s-ui
+          ghcr.io/DarkSwords/s-ui
         tags: |
           type=ref,event=branch
           type=ref,event=tag
